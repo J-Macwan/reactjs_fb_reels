@@ -1,0 +1,79 @@
+/* ReelsFeed.css */
+
+/* Full-screen black background for the reels page */
+.reels-feed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000; /* black background around the reel */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Top bar with close button on the left and "Create reel" on the right */
+.reels-top-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.close-btn,
+.create-reel-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+.close-btn:hover,
+.create-reel-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+/* The main container that holds the reel and nav arrows */
+.reel-container {
+  position: relative;
+  width: 100%;
+  max-width: 480px; /* narrower for vertical reels */
+  height: calc(100% - 48px); /* fill the rest of the screen minus top bar */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Navigation arrows on the left/right */
+.nav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.left-arrow {
+  left: -40px; /* position outside the reel container so it doesn't overlap */
+}
+
+.right-arrow {
+  right: -40px;
+}
+
+.nav-arrow:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}

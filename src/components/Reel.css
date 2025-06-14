@@ -1,0 +1,116 @@
+/* Reel.css */
+
+.reel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #000; /* fallback if video doesn't fill area */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reel-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Overlay with user info + icons */
+.reel-overlay {
+  position: absolute;
+  bottom: 60px; /* leave space for comment box if open */
+  left: 16px;
+  right: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: #fff;
+}
+
+.reel-user-info {
+  max-width: 60%;
+}
+
+.reel-user-info h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.reel-caption {
+  margin-top: 4px;
+  white-space: pre-wrap; /* so newlines show if you want them */
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.reel-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.icon-btn:hover {
+  opacity: 0.8;
+}
+
+/* Comment box at bottom if toggled */
+.reel-comments {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 8px;
+  color: #fff;
+}
+
+.comments-list {
+  max-height: 120px;
+  overflow-y: auto;
+  margin-bottom: 8px;
+}
+
+.comment-item {
+  background: #333;
+  padding: 4px 8px;
+  margin-bottom: 4px;
+  border-radius: 4px;
+}
+
+.comment-form {
+  display: flex;
+  gap: 8px;
+}
+
+.comment-form input {
+  flex: 1;
+  padding: 6px;
+  border: 1px solid #666;
+  border-radius: 4px;
+  background: #222;
+  color: #fff;
+}
+
+.comment-form button {
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: none;
+  background: #444;
+  color: #fff;
+  cursor: pointer;
+}
+.comment-form button:hover {
+  background: #555;
+}

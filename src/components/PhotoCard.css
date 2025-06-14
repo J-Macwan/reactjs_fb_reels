@@ -1,0 +1,26 @@
+.photo-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 220px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.photo-card:hover {
+  transform: scale(1.02);
+}
+
+.photo-card img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.photo-card h4 {
+  margin: 8px 12px;
+  font-weight: 500;
+}

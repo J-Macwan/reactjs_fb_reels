@@ -1,0 +1,15 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+  width: 100vw;  /* Full viewport width */
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* We'll manage scrolling inside components */
+}
+
+.app-body {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}

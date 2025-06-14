@@ -1,0 +1,16 @@
+.watch-page {
+  flex: 1;
+  background-color: #f0f2f5;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.videos-container {
+  width: 500px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}

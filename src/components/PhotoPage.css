@@ -1,0 +1,17 @@
+.photo-page {
+  flex: 1;
+  background-color: #f0f2f5;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photos-container {
+  width: 500px;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}

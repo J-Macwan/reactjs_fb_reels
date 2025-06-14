@@ -1,0 +1,23 @@
+.video-card {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.video-card:hover {
+  transform: scale(1.03);
+}
+
+.video-card img {
+  width: 100%;
+  display: block;
+}
+
+.video-card h4 {
+  margin: 10px;
+  text-align: center;
+}
